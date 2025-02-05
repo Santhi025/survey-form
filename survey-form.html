@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    
+    <style> 
+        body {
+        background-color:aqua;
+       display: flex;
+       
+       align-items: center;
+       flex-direction: column;
+      
+       
+    }
+    #sub{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+
+    }
+    
+    #form {
+            background-color: #fff;
+            width: 500px;
+           display: block;
+            padding: 30px 20px;
+            box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.445);
+            margin-top: 50px;
+            
+        }
+        .form-control label{
+            display: block;
+            text-align: left;
+            margin-left: 10px;
+        }
+    .form-control input,select{
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 95%;
+        margin: 10px;
+        margin-bottom: 25px;
+        padding: 10px;
+        display: block;
+        
+    }
+    .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display:inline-block;
+            width: auto;
+            margin-bottom: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>SURVEY FORM</h1>
+    <form id="form" > 
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control"> 
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+        </div> 
+        <div class="form-control">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter Your Age">
+
+        </div> 
+        <div class="form-control">
+            <label for="role">Which option best desbribes you</label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+            </select>
+        </div> 
+        <div class="form-control">
+            <label >Would you like to fill a form</label>
+
+            <label for="recommed-1" >
+                <input type="radio" style="margin-bottom: auto;" > Yes 
+            </label>
+            <label for="recommed-2" >
+                <input type="radio" style="margin-bottom: auto;">No 
+            </label>
+            <label for="recommed-3" >
+                <input type="radio">Maybe
+            </label>
+        </div>
+        <div class="form-control">
+            <label  style="margin-top:25px ;">Languages and Frameworks known 
+                <small>(Check all that appply)</small>
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">C
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">C++
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">C#
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">Java
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">Python
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">JavaScript
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">React 
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">Angular 
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">Django 
+            </label>
+            <label for="opt-1">
+                <input type="checkbox">Spring
+            </label>
+
+        </div>  
+        <div>
+            <p><lable for ="comment">Add about yourself</lable></p>
+            <textarea id="comment" rows="5"cols="65" > </textarea>
+        </div>  
+        <div id="sub">
+            <input type="submit" >
+        </div>    
+        </form>
+    
+
+    </div>
+</body>
+</html>
